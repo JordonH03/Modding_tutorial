@@ -1,0 +1,2 @@
+com/chopstx2/mymod/MyMod.java
+ com.chopstx2.mymod.MyMod
