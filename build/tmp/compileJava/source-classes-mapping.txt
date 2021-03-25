@@ -1,2 +1,4 @@
+com/chopstx2/mymod/init/ItemInit.java
+ com.chopstx2.mymod.init.ItemInit
 com/chopstx2/mymod/MyMod.java
  com.chopstx2.mymod.MyMod
