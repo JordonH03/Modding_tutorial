@@ -26,7 +26,7 @@ gamma:0.0
 renderDistance:12
 entityDistanceScaling:1.0
 guiScale:0
-particles:0
+particles:2
 maxFps:120
 difficulty:2
 graphicsMode:1
@@ -58,7 +58,7 @@ useNativeTransport:true
 mainHand:right
 attackIndicator:1
 narrator:0
-tutorialStep:movement
+tutorialStep:none
 mouseWheelSensitivity:1.0
 rawMouseInput:true
 glDebugVerbosity:1
