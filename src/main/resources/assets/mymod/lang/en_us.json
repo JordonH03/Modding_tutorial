@@ -1,6 +1,7 @@
 {
   "itemGroup.mymod": "My Mod Items",
 
-  "item.mymod.example_item": "Fire Wand"
+  "item.mymod.example_item": "Fire Wand",
+  "block.mymod.example_block": "Ruby Block"
 
 }

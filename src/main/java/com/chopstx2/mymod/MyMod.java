@@ -1,5 +1,6 @@
 package com.chopstx2.mymod;
 
+import com.chopstx2.mymod.init.BlockInit;
 import com.chopstx2.mymod.init.ItemInit;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
@@ -36,8 +37,10 @@ public class MyMod
         bus.addListener(this::setup);
         // Register the doClientStuff method for modloading
         bus.addListener(this::doClientStuff);
-
-        ItemInit.ITEM.register(bus);
+        // Register the ITEMS
+        ItemInit.ITEMS.register(bus);
+        // Register the BLOCKS
+        BlockInit.BLOCKS.register(bus);
 
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);
