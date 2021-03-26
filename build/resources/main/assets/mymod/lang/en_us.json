@@ -2,6 +2,6 @@
   "itemGroup.mymod": "My Mod Items",
 
   "item.mymod.example_item": "Fire Wand",
-  "block.mymod.example_item": "Block of Epicness"
+  "block.mymod.example_block": "Ruby Block"
 
 }
