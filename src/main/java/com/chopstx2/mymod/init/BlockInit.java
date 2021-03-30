@@ -20,8 +20,9 @@ public class BlockInit {
             .of(Material.CAKE, MaterialColor.COLOR_PURPLE) // Craft with cake and purple dye
             .strength(3.0f,3.0f) // First float is hardness to break, second float is resistance to explosion – currently set to iron ore
             .harvestTool(ToolType.PICKAXE) // The type of tool that will break it the fastest
-            .harvestLevel(3) // The level of tool needed. 3 is Iron
-            .sound(SoundType.HONEY_BLOCK) // The sound block makes upon breaking
+            .harvestLevel(2) // The level of tool needed. 2 is Iron
+            .sound(SoundType.HONEY_BLOCK) // Sound upon breaking
+            .requiresCorrectToolForDrops()
             )
     );
 }
