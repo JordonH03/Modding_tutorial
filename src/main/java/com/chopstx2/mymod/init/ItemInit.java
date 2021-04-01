@@ -17,6 +17,8 @@ public class ItemInit {
     public  static final RegistryObject<Item> EXAMPLE_ITEM = ITEMS.register("example_item", () -> new Item(new Item.Properties()
             .tab(ItemGroup.TAB_MISC))); // Denotes the tab item will appear in creative mode: Miscellaneous
 
+    public static final RegistryObject<SpecialItem> SPECIAL_ITEM = ITEMS.register("special_item", () -> new SpecialItem(new Item.Properties().tab(ItemGroup.TAB_MISC)));
+
     // Block items
     public static final RegistryObject<BlockItem> EXAMPLE_BLOCK = ITEMS.register("example_block",
             () -> new BlockItem(BlockInit.EXAMPLE_BLOCK.get(), // Gets the block item from the RegistryObject
