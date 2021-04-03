@@ -2,10 +2,12 @@ package com.chopstx2.mymod;
 
 import com.chopstx2.mymod.init.BlockInit;
 import com.chopstx2.mymod.init.ItemInit;
+import com.chopstx2.mymod.world.OreGeneration;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.RegistryEvent;
+import net.minecraftforge.eventbus.api.EventPriority;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.InterModComms;
@@ -41,6 +43,8 @@ public class MyMod
         ItemInit.ITEMS.register(bus);
         // Register the BLOCKS
         BlockInit.BLOCKS.register(bus);
+        // Register ore generation event
+        MinecraftForge.EVENT_BUS.addListener(EventPriority.HIGH, OreGeneration::generateOres);
 
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);

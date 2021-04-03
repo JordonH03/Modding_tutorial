@@ -1,9 +1,7 @@
 package com.chopstx2.mymod.init;
 
 import com.chopstx2.mymod.MyMod;
-import net.minecraft.block.AbstractBlock;
-import net.minecraft.block.Block;
-import net.minecraft.block.SoundType;
+import net.minecraft.block.*;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.material.MaterialColor;
 import net.minecraftforge.common.ToolType;
@@ -25,4 +23,7 @@ public class BlockInit {
             .requiresCorrectToolForDrops()
             )
     );
+
+    // Register the ore
+    public static final RegistryObject<Block> EXAMPLE_ORE = BLOCKS.register("example_ore", () -> new OreBlock(AbstractBlock.Properties.copy(Blocks.IRON_ORE)));
 }

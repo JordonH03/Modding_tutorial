@@ -1,3 +1,7 @@
+com/chopstx2/mymod/init/SpecialItem.java
+ com.chopstx2.mymod.init.SpecialItem
+com/chopstx2/mymod/world/OreGeneration.java
+ com.chopstx2.mymod.world.OreGeneration
 com/chopstx2/mymod/init/ItemInit.java
  com.chopstx2.mymod.init.ItemInit
 com/chopstx2/mymod/init/BlockInit.java
